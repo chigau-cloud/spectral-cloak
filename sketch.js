@@ -5,8 +5,7 @@ let terminate;
 let color_offset;
 
   p.setup = function() {
-    p.createCanvas(1400, 1000);
-    p.pixelDensity(3.0);
+    p.createCanvas(600,1600);
     p.colorMode(p.HSB);
     init();
   }
