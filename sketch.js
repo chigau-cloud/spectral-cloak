@@ -5,7 +5,7 @@ let terminate;
 let color_offset;
 
   p.setup = function() {
-    p.createCanvas(1000,1000);
+    p.createCanvas(1400,1000);
     p.colorMode(p.HSB);
     init();
   }
@@ -50,14 +50,3 @@ let color_offset;
 }
 
 new p5(sketch);
-
-      pnts[i].y++;
-    }
-    return false;
-  }
-
-
-}
-
-new p5(sketch);
-
