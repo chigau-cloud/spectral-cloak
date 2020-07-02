@@ -1,6 +1,6 @@
 let sketch = function(p) {
 let pnts;
-let n = 1800;
+let n = 400;
 let terminate;
 let color_offset;
 let canvas = createCanvas(width, height); canvas.parent('p5Container');
@@ -25,7 +25,7 @@ let canvas = createCanvas(width, height); canvas.parent('p5Container');
     pnts = [];
     color_offset = p.random(260);
     for (var i = 0; i < n; i++) {
-      pnts.push({x:i+200, y:1, px:i+600, py:0});
+      pnts.push({x:i+200, y:1, px:i+200, py:0});
     }
   }
 
