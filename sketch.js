@@ -1,6 +1,6 @@
 let sketch = function(p) {
 let pnts;
-let n = 1000;
+let n = 100;
 let terminate;
 let color_offset;
 
