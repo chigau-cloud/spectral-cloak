@@ -1,6 +1,6 @@
 let sketch = function(p) {
 let pnts;
-let n = 100;
+let n = 250;
 let terminate;
 let color_offset;
 
@@ -40,7 +40,7 @@ let color_offset;
     for (var i = 0; i < pnts.length; i++) {
       pnts[i].px = pnts[i].x;
       pnts[i].py = pnts[i].y;
-      pnts[i].x += (p.noise(i/200,pnts[i].y/350)) *2 -1;
+      pnts[i].x += (p.noise(i/100,pnts[i].y/250)) *2 -1;
       pnts[i].y++;
     }
     return false;
