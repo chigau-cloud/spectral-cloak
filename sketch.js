@@ -2,7 +2,7 @@
 
 let sketch = function(p) {
 let pnts;
-let n = 800;
+let n = 1400;
 let terminate;
 
   p.setup = function() {
