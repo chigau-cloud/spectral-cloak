@@ -3,6 +3,7 @@ let pnts;
 let n = 480;
 let terminate;
 let color_offset;
+let canvas = createCanvas(width, height); canvas.parent('p5Container');
 
   p.setup = function() {
     p.createCanvas(displayWidth, displayHeight);
