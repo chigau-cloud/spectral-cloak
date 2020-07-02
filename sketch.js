@@ -6,7 +6,7 @@ let n = 1400;
 let terminate;
 
   p.setup = function() {
-    p.createCanvas(600,900);
+    p.createCanvas(320,600);
     p.stroke(255,6);
     p.colorMode(p.HSB);
     init();
