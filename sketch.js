@@ -1,6 +1,6 @@
 let sketch = function(p) {
 let pnts;
-let n = 480;
+let n = 1800;
 let terminate;
 let color_offset;
 let canvas = createCanvas(width, height); canvas.parent('p5Container');
