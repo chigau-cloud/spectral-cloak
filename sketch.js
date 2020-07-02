@@ -2,11 +2,11 @@
 
 let sketch = function(p) {
 let pnts;
-let n = 1400;
+let n = 800;
 let terminate;
 
   p.setup = function() {
-    p.createCanvas(320,600);
+    p.createCanvas(480,600);
     p.stroke(255,6);
     p.colorMode(p.HSB);
     init();
