@@ -1,13 +1,11 @@
 let sketch = function(p) {
 let pnts;
-let n = 1000;
+let n = 480;
 let terminate;
 let color_offset;
-const w = p.windowWidth;
-const h = p.windowHeight;
 
   p.setup = function() {
-    p.createCanvas(w,h);
+    p.createCanvas(displayWidth, displayHeight);
     p.colorMode(p.HSB);
     init();
   }
