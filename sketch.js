@@ -28,11 +28,13 @@ let terminate;
     }
   }
 
-  function display () {
+function display () {
     for (var i = 0; i < pnts.length; i++) {
+      p.stroke(((pnts[i].y * .03) + color_offset + (i/n * 80)) % 360,80,100,.07);
       p.line(pnts[i].px, pnts[i].py, pnts[i].x, pnts[i].y);
     }
   }
+
 
   
   
