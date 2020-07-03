@@ -1,11 +1,11 @@
 let sketch = function(p) {
 let pnts;
-let n = 300;
+let n = 100;
 let terminate;
 let color_offset;
 
   p.setup = function() {
-    p.createCanvas(300,1600);
+    p.createCanvas(600,1600);
     p.colorMode(p.HSB);
     init();
   }
