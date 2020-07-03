@@ -1,6 +1,6 @@
 let sketch = function(p) {
 let pnts;
-let n = 1000;
+let n = 400;
 let terminate;
 let color_offset;
 
@@ -22,7 +22,7 @@ let color_offset;
   function init() {
     terminate = false;
     pnts = [];
-    color_offset = p.random(280);
+    color_offset = p.random(120);
     for (var i = 0; i < n; i++) {
       pnts.push({x:i+200, y:1, px:i+200, py:0});
     }
