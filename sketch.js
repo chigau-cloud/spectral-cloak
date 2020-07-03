@@ -24,7 +24,7 @@ let color_offset;
     pnts = [];
     color_offset = p.random(280);
     for (var i = 0; i < n; i++) {
-      pnts.push({x:i+100, y:1, px:i+100, py:0});
+      pnts.push({x:i+500, y:1, px:i+500, py:0});
     }
   }
 
@@ -40,7 +40,7 @@ let color_offset;
     for (var i = 0; i < pnts.length; i++) {
       pnts[i].px = pnts[i].x;
       pnts[i].py = pnts[i].y;
-      pnts[i].x += (p.noise(i/200,pnts[i].y/350)) *2 -1;
+      pnts[i].x += (p.noise(i/200,pnts[i].y/150)) *2 -1;
       pnts[i].y++;
     }
     return false;
