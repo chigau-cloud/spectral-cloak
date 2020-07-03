@@ -1,11 +1,11 @@
 let sketch = function(p) {
 let pnts;
-let n = 400;
+let n = 1000;
 let terminate;
 let color_offset;
 
   p.setup = function() {
-    p.createCanvas(600,1200);
+    p.createCanvas(600,1000);
     p.colorMode(p.HSB);
     init();
   }
@@ -22,7 +22,7 @@ let color_offset;
   function init() {
     terminate = false;
     pnts = [];
-    color_offset = p.random(120);
+    color_offset = p.random(160);
     for (var i = 0; i < n; i++) {
       pnts.push({x:i+200, y:1, px:i+200, py:0});
     }
@@ -44,13 +44,6 @@ let color_offset;
       pnts[i].y++;
     }
     return false;
-  }
-
-
-}
-
-new p5(sketch);
-
   }
 
 
