@@ -30,7 +30,7 @@ let color_offset;
 
   function display () {
     for (var i = 0; i < pnts.length; i++) {
-      p.stroke(((pnts[i].y * .2) + color_offset + (i/n * 120)) % 360,80,100,.07);
+      p.stroke(((pnts[i].y * .06) + color_offset + (i/n * 120)) % 360,80,100,.07);
       p.line(pnts[i].px, pnts[i].py, pnts[i].x, pnts[i].y);
     }
   }
@@ -40,7 +40,7 @@ let color_offset;
     for (var i = 0; i < pnts.length; i++) {
       pnts[i].px = pnts[i].x;
       pnts[i].py = pnts[i].y;
-      pnts[i].x += (p.noise(i/200,pnts[i].y/350)) *2 -1;
+      pnts[i].x += (p.noise(i/100,pnts[i].y/350)) *2 -1;
       pnts[i].y++;
     }
     return false;
