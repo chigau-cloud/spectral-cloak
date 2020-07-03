@@ -30,7 +30,7 @@ let color_offset;
 
   function display () {
     for (var i = 0; i < pnts.length; i++) {
-      p.stroke(((pnts[i].y * .08) + color_offset + (i/n * 120)) % 360,80,100,.07);
+      p.stroke(((pnts[i].y * .2) + color_offset + (i/n * 120)) % 360,80,100,.07);
       p.line(pnts[i].px, pnts[i].py, pnts[i].x, pnts[i].y);
     }
   }
